@@ -173,7 +173,7 @@ def visualize_dataset(dataset, num_samples=5):
 def get_model(num_classes=2):  # Background (0) + Hotspot (1)
     """Initialize the Faster R-CNN model"""
     # Load pre-trained model
-    model = fasterrcnn_resnet50_fpn(pretrained=True)
+    model = fasterrcnn_resnet50_fpn(pretrained=False)
     
     # Replace the classifier with a new one for our classes
     in_features = model.roi_heads.box_predictor.cls_score.in_features
