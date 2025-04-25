@@ -433,7 +433,7 @@ def evaluate(model, criterion, data_loader, device):
         for i, (logits, boxes, target) in enumerate(zip(pred_logits, pred_boxes, targets)):
             # Get predicted classes
             probas = logits.softmax(-1)
-            keep = probas[:, -1] < 0.9  # Filter out "no object" predictions
+            keep = probas[:, -1] < 0.8  # Filter out "no object" predictions
             
             if keep.sum() == 0:
                 continue
