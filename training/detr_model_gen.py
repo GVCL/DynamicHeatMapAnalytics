@@ -334,7 +334,7 @@ class HungarianMatcher(nn.Module):
 
 def build_model_and_criterion(num_classes, num_queries=100):
     # Build model
-    model = torch.hub.load('facebookresearch/detr', 'detr_resnet50', pretrained=True)
+    model = torch.hub.load('facebookresearch/detr', 'detr_resnet50', pretrained=False)
     model.class_embed = nn.Linear(256, num_classes + 1)
     model.num_queries = num_queries
     
