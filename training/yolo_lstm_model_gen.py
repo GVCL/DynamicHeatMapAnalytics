@@ -422,8 +422,7 @@ def main():
         dataset = HotspotDataset(annotation_paths, image_dirs, sequence_length=5)
         
         # Initialize models
-        # Use .yaml instead of .pt for the YOLO model
-        yolo_model = YOLO('yolov8n.yaml')  # Changed from .pt to .yaml
+        yolo_model = YOLO('yolov8n.pt')
         lstm_model = LSTMPredictor(input_size=4, hidden_size=128, num_layers=2)
         
         # Train models
