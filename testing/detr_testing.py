@@ -393,7 +393,7 @@ def main():
     # Create results directory
     os.makedirs(results_dir, exist_ok=True)
     
-    model = torch.hub.load('facebookresearch/detr', 'detr_resnet50', pretrained=True, num_classes=2)
+    model = torch.hub.load('facebookresearch/detr', 'detr_resnet50', pretrained=False, num_classes=2)
     
     
     # Create dataset and dataloader
