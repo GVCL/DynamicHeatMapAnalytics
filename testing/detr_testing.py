@@ -381,9 +381,9 @@ def visualize_predictions(image, pred_boxes, gt_boxes, save_path=None):
 
 def main():
     # Configuration
-    checkpoint_path = path to saved checkpoint model
-    coco_annotation_path = path to test video annotatiob json file
-    test_image_dir = path to test video frames folder
+    checkpoint_path = //path to saved checkpoint model
+    coco_annotation_path = //path to test video annotatiob json file
+    test_image_dir = //path to test video frames folder
     results_dir = r"evaluation_results"
     batch_size = 2
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
