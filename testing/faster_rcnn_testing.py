@@ -403,9 +403,9 @@ def visualize_predictions(image, pred_boxes, gt_boxes, save_path=None):
 # Main function to run evaluation
 def main():
     # Configuration - UPDATE THESE PATHS TO MATCH YOUR ENVIRONMENT
-    model_path = 
-    coco_annotation_path = 
-    test_image_dir =
+    model_path = //path to model
+    coco_annotation_path = //path to annotation path
+    test_image_dir = //path to test_images_folder
     results_dir = r"evaluation_results" 
     batch_size = 2
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
